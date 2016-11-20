@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Comment from './Comment'
 
+/* Можно унаследовать CommentBloc от Article, не знаю, как это будет с точки
+зрения архитектуры*/
 class CommentBloc extends Component {
 
     constructor() {
