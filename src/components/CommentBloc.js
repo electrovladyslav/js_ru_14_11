@@ -3,6 +3,7 @@ import Comment from './Comment'
 
 /* Можно унаследовать CommentBloc от Article, не знаю, как это будет с точки
 зрения архитектуры*/
+//Нет, наследование в Реакте достаточно плохая практика, сегодня узнаешь как делать лучше)
 class CommentBloc extends Component {
 
     constructor() {
