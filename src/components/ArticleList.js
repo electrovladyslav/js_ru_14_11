@@ -14,6 +14,7 @@ class ArticleList extends Component {
                 <Article
                     article = {article}
                     isOpen = {article.id == this.state.openArticleId}
+                    //
                     toggleOpen = {this.openArticle(article.id)}
                 />
             </li>

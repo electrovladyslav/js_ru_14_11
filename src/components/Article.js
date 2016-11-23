@@ -11,15 +11,6 @@ function Article(props) {
     )
 }
 
-
-Article.propTypes = {
-    article: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-        comments: PropTypes.array,
-        text: PropTypes.string
-    }).isRequired
-}
-
 function getBody(props) {
     const { article, isOpen } = props
     if (!isOpen) return null
@@ -30,6 +21,15 @@ function getBody(props) {
         </div>
     )
 }
+
+Article.propTypes = {
+    article: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        comments: PropTypes.array,
+        text: PropTypes.string
+    }).isRequired
+}
+
 
 
 export default Article

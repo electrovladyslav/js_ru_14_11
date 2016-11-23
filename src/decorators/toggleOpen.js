@@ -10,6 +10,7 @@ export default (Component) => class WrappedComponent extends React.Component {
 
     render() {
         return <Component {...this.props} {...this.state} toggleOpen = {this.toggleOpen}/>
+        //isOpen = {this.state.isOpen} -> {...this.state}
     }
 
     toggleOpen = ev => {
