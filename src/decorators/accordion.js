@@ -3,7 +3,9 @@ import React from 'react'
 export default (Component) => class WrappedComponent extends React.Component {
     constructor() {
         super()
-        openArticleId: null
+        this.state = {
+            openArticleId: null
+        }
     }
 
     render() {
@@ -12,10 +14,16 @@ export default (Component) => class WrappedComponent extends React.Component {
     }
 
     openArticle = id => ev => {
-
-        this.setState({
-            openArticleId: id
-        })
+        //debugger;
+        if (id === this.state.openArticleId) {
+            this.setState({
+                openArticleId: null
+            })
+        } else {
+            this.setState({
+                openArticleId: id
+            })
+        }
     }
     /*  openArticle = function(id) {
             return function (ev) {
